@@ -20,6 +20,7 @@ lose = 0;
 function game() {
   info = document.getElementById("info");
   best = document.getElementById("best");
+  pertes = document.getElementById("pertes");
   px += xv;
   py += yv;
 
@@ -64,6 +65,7 @@ function game() {
     info.innerHTML = "Score : " + score;
     if (score > bestScore) {
       bestScore = score;
+      best.innerHTML = "Best score : " + bestScore;
     }
 
     ax = Math.floor(Math.random() * tc);

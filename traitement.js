@@ -46,7 +46,6 @@ function game() {
     if (trail[i].x === px && trail[i].y === py) {
       tail = 5;
       score = 0;
-      lose++;
 
       info.innerHTML = "Score : " + score;
 

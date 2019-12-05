@@ -3,6 +3,7 @@ window.onload = function() {
   ctx = canv.getContext("2d");
 
   document.addEventListener("keydown", keyPush);
+
   setInterval(game, 1000 / 15);
 };
 
@@ -18,11 +19,16 @@ bestScore = 0;
 lose = 0;
 start = false;
 currentDirection = 0;
+startTime = Date.now();
 
 function game() {
   info = document.getElementById("info");
   best = document.getElementById("best");
   pertes = document.getElementById("pertes");
+  duree = document.getElementById("duree-partie");
+
+  temps = Date.now() - startTime;
+
   px += xv;
   py += yv;
 
@@ -39,10 +45,15 @@ function game() {
     py = 0;
   }
 
-  ctx.fillStyle = "black";
+  ctx.fillStyle = "grey";
   ctx.fillRect(0, 0, canv.width, canv.height);
 
   ctx.fillStyle = "lime";
+  duree.innerHTML =
+    "Temps : " +
+    Math.floor(Math.floor(temps / 1000) / 60) +
+    " : " +
+    (Math.floor(temps / 1000) % 60);
   for (var i = 0; i < trail.length; i++) {
     ctx.fillRect(trail[i].x * gs, trail[i].y * gs, gs - 2, gs - 2);
 
@@ -51,6 +62,7 @@ function game() {
       score = 0;
       if (start) {
         lose++;
+        startTime = Date.now();
         pertes.innerHTML = "Pertes : " + lose;
       }
 
@@ -70,6 +82,13 @@ function game() {
     tail++;
     score++;
     start = true;
+    // duree.innerHTML("Temps : ", temps);
+    console.log(
+      Math.floor(Math.floor(temps / 1000) / 60) +
+        " minutes " +
+        (Math.floor(temps / 1000) % 60) +
+        " secondes"
+    );
     info.innerHTML = "Score : " + score;
     if (score > bestScore) {
       bestScore = score;

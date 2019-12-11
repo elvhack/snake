@@ -1,0 +1,17 @@
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#informations {
+  display: flex;
+  justify-content: space-around;
+  border: ridge purple 2px;
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+}

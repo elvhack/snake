@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url(../assets/images/fond_labyrinthe.jpg);
+    background-position: 100vh 100vw;
+    background-position: center center;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#informations {
+    display: flex;
+    margin: 4%;
+    justify-content: space-around;
+    border: ridge purple 2px;
+    border-radius: 12px;
+    background-color: white;
+    font-family: 'Solway', serif;
+}
+
+h1 {
+    font-family: 'Solway', serif;
+    margin: 3% 4%;
+    padding: 1%;
+    text-align: center;
+    background-image: url(https://media.giphy.com/media/26xBJ38HIx39YNWIo/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: lowercase;
+    text-shadow: whitesmoke 2px 3px;
+    font-weight: lighter;
+    font-size: 55px;
+    line-height: 1;
+}

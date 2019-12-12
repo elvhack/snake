@@ -5,6 +5,20 @@
 
 # Modifications apportées au snake
 
+A)Ajout du npm Live Server
+  
+  1. Installer node.js
+  
+  2. Installer Live Server 
+```
+npm install live-server
+```
+  3.Ajouter un gitignore à la racine pour que le node_modules ne soit pas pris en compte 
+```
+###> npm pack ###
+/node_modules/
+```
+
 A)En CSS
 
   -Ajout d'un background
@@ -14,4 +28,5 @@ A)En CSS
   -Modification de la typo 
   
   -Ajout d'un fond loop à la typo
+  
   

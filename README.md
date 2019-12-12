@@ -6,6 +6,7 @@
 # Modifications apportées au snake
 
 A)En CSS
+
   -Ajout d'un background
   -Changement du padding/margin au h1
   -Modification de la typo 

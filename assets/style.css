@@ -16,6 +16,9 @@ html {
     align-items: center;
 }
 
+
+/*Mon canvas mur ne fonctionne pas, faut que je regarde des tutos*/
+
 #canvas {
     display: none;
     border-style: solid;

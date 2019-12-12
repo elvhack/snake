@@ -34,8 +34,6 @@ h1 {
     background-image: url(https://media.giphy.com/media/26xBJ38HIx39YNWIo/giphy.gif);
     background-size: cover;
     color: transparent;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
     text-transform: lowercase;
     text-shadow: whitesmoke 2px 3px;
     font-weight: lighter;

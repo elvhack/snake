@@ -19,7 +19,7 @@ npm install live-server
 /node_modules/
 ```
 
-A)En CSS
+B)En CSS
 
   -Ajout d'un background
   
@@ -29,4 +29,16 @@ A)En CSS
   
   -Ajout d'un fond loop à la typo
   
+  -Afficher le mur (à fixer)
+  
+C)En JS
+
+   -Faire un mur (à fixer)
+   
+   -Contrôler le random de l'objet (à fixer)
+   
+   
+   
+   
+ 
   

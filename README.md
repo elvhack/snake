@@ -8,7 +8,10 @@
 A)En CSS
 
   -Ajout d'un background
+  
   -Changement du padding/margin au h1
+  
   -Modification de la typo 
+  
   -Ajout d'un fond loop à la typo
   

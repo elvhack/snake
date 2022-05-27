@@ -68,7 +68,7 @@ function game() {
 
       info.innerHTML = "Score : " + score;
 
-      best.innerHTML = "Best score : " + bestScore;
+      best.innerHTML = "Meilleur score : " + bestScore;
     }
   }
 
@@ -92,7 +92,7 @@ function game() {
     info.innerHTML = "Score : " + score;
     if (score > bestScore) {
       bestScore = score;
-      best.innerHTML = "Best score : " + bestScore;
+      best.innerHTML = "Meilleur score : " + bestScore;
     }
 
     ax = Math.floor(Math.random() * tc);
